@@ -4,5 +4,6 @@ int main() {
     
  char x;
  scanf("%c", &x) ;
- printf("You entered: %c", x) ij return 0;
+ printf("You entered: %c", x);
+  return 0;
 }
