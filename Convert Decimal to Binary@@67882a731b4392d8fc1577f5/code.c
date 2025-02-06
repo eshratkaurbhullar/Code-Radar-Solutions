@@ -1,17 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    long a,rem=0,bin=0,place=1;
-    scanf("%ld",&a);
-    while(a>=0)
-    {
-        rem=a%2;
-        a=a/2;
-        bin=bin+(rem*place);
-        place=place*10;
+    int n, binary[32], i = 0;
+    
+    scanf("%d", &n);
 
+    if (n == 0) {
+        printf("0");
+        return 0;
     }
-    printf("%ld",bin);
+
+    while (n > 0) {
+        binary[i++] = n & 1;
+        n >>= 1; 
+    }
+
+    while (i--) {
+        printf("%d", binary[i]);
+    }
 
     return 0;
 }
