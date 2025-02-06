@@ -1,8 +1,11 @@
-#include <stdio.h>
-
 int main() {
-    int a,b;
-    scanf("%d %d",&a,&b);
-    (a<b)?printf("Profit"):(a>b)?printf("Loss"):printf("No Profit No Loss");
+    int n,shift;
+    scanf("%d %d",&n,&shift);
+    int bitmask= n>>shift;
+    if(bitmask&1==1){
+        printf("%d",1);
+    }else{
+        printf("%d",0);
+    }
     return 0;
 }
