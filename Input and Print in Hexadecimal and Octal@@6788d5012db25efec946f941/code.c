@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    
-    double x;
-    scanf("%lf",&x);
-    printf("You entered: %.4lf",x);
-    
+    int a;
+    scanf("%d",&a);
+    printf("Hexadecimal: %X\nOctal: %o",a,a);
     return 0;
 }
