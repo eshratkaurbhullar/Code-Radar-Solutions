@@ -1,3 +1,4 @@
+#include <studio.h>
 int main() {
     int n,shift;
     scanf("%d %d",&n,&shift);
