@@ -1,4 +1,4 @@
-#inlude <stdio.h>
+#include <stdio.h>
 int main() {
     float a,b;
     char s;
